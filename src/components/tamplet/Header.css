@@ -1,0 +1,12 @@
+header.header {
+    background-color: #fff;
+    padding: 0 20px;
+    margin-bottom: -10px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: var(--shadow);
+}
+
+header.header {
+    font-size: 1.8em;
+}

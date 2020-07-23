@@ -1,0 +1,47 @@
+    /*Aplicando Css grid*/
+    /*Definindo variaveis de uso no css*/
+    
+     :root {
+        --menu-top-height: 100px;
+        --bg-dark: #1A2F3A;
+        --logo-height: 100px;
+        --header-height: 100px;
+        --aside-width: 225px;
+        --shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 2px 0 rgba(0, 0, 0, 0.06);
+        --footer-height: 40px
+    }
+    
+    * {
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .app {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: var(--aside-width) 1fr;
+        grid-template-rows: var(--header-height) 1fr var(--footer-height);
+        grid-template-areas: "logo header" "menu content" "menu footer";
+        height: 100vh;
+        background-color: #f5f5f5;
+    }
+    
+    aside.logo {
+        grid-area: logo;
+    }
+    
+    header.header {
+        grid-area: header;
+    }
+    
+    aside.menu-area {
+        grid-area: menu;
+    }
+    
+    main.content {
+        grid-area: content;
+    }
+    
+    footer.footer {
+        grid-area: footer;
+    }
